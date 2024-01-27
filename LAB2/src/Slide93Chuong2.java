@@ -1,13 +1,23 @@
 import java.util.Scanner;
-public class Slide93Chuong2{
-    public static void main(String[] args){
+import java.time.Year;
+
+public class Slide93Chuong2 {
+    public static void main(String[] args) {
         String Name;
-        int Year;
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Nhap Ten:"); Name=sc.nextLine();
-        System.out.print("Nhap nam sinh:"); Year=sc.nextInt();
+        int year;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap Ten:");
+        Name = sc.nextLine();
+        System.out.print("Nhap nam sinh:");
+        year = sc.nextInt();
+        int yearnow = Year.now().getValue();
+        int old = yearnow - year;
         sc.close();
-        if(Year-new Date >16)
-        
+        if (old < 16)
+            System.out.print("Ban " + Name + " Tuoi Vi Thanh Nien");
+        else if (old > 18)
+            System.out.print("Ban " + Name + " Da gia");
+        else
+            System.out.print("Ban " + Name + " Tuoi Truong Thanh");
     }
 }
