@@ -5,6 +5,7 @@ public class Slide94Bai4 {
         Scanner scan = new Scanner(System.in);
         System.out.println("Nhap so a:");
         int a = scan.nextInt();
+        scan.close();
 
         switch (a) {
 

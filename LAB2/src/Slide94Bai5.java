@@ -11,6 +11,7 @@ public class Slide94Bai5 {
             sum = sum + number;
             StrResuat = StrResuat + number + " + ";
         }
+        sc.close();
         System.out.println(StrResuat.substring(0,
                 StrResuat.length() - 2) + " = " + sum);
     }
